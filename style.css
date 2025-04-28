@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-login: url('./images/Login-2.jpg');
+    --bg-color: #1E1E1E;
+    --color-cinza: #E2E2E2;
+    --color-purple: #7C488A;
+}
+
+body {
+    background-color: var(--bg-color);
+    line-height: 1.5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-login {
+    background-image: var(--bg-login);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2.5rem;
+}
+
+.image-login p {
+    font-size: 0.9rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3.25rem 4.75rem;
+}
+
+.login img {
+    height: 15.625rem;
+    margin-bottom: 1.5rem;
+}
+
+.group-form, .group-form input {
+    width: 100%;
+}
+
+.group-form label {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--color-cinza);
+    text-align: left;
+}
+
+.group-form input {
+    margin-top: .5rem;
+    padding: 0.75rem;
+    outline: none;
+    border: none;
+    border-radius: 0.313rem;
+    background: #121212;
+    height: initial;
+    font-size: .9rem;
+    color: var(--color-cinza);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.group-form input:focus {
+    outline: 0.063rem solid var(--color-purple);
+}
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-div input[type=checkbox] {
+    margin-right: 1.25rem;
+}
+
+.checkbox-div input[type=checkbox]:before {
+    cursor: pointer;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: .25rem;
+    background-color: #121212;
+    border: 0.063rem solid #363739;
+}
+
+.checkbox-div input[type=checkbox]:checked:before {
+    content: '\2714';
+    font-size: .875rem;
+    color: var(--color-purple);
+    text-align: center;
+}
+
+.checkbox-div label {
+    margin-top: .5rem;
+    cursor: pointer;
+    color: var(--color-cinza);
+}
+
+button {
+    border-radius: 2.438rem;
+    min-width: 7.5rem;
+    width: 25%;
+    height: 3.125rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    background-color: var(--color-purple);
+    color: var(--color-cinza);
+    cursor: pointer;
+    transition: .25s;
+    margin-bottom: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--color-cinza);
+    color: var(--color-purple);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-cinza);
+    font-size: .9rem;
+    transition: .25s;
+}
+
+a:hover {
+    color: var(--color-purple);
+    text-decoration: underline;
+}
+
+.whats-app {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.whats-app:hover {
+    transform: scale(1.05);
+}
+
+.whats-app img {
+    width: 8rem;
+}
